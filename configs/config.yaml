@@ -8,7 +8,7 @@ defaults:
   #  - datamodule: wikipedia_nre.yaml
   - datamodule: rebel.yaml
   - callbacks: default.yaml # set this to null if you don't want to use callbacks
-  - logger: wandb #null # set logger here or use command line (e.g. `python run.py logger=wandb`)
+  - logger: null # set logger here or use command line (e.g. `python run.py logger=wandb`)
 
   - experiment: null
   - hparams_search: null

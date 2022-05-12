@@ -19,7 +19,7 @@ wget https://zenodo.org/record/6139236/files/genie_rw.ckpt  # Trained on Rebel a
 # Models initialized with a pretrained language model (GenIE - PLM)
 wget https://zenodo.org/record/6139236/files/genie_plm_r.ckpt  # Trained on Rebel
 
-# Models initialized with a pretrained entity linker GENRE (GenIE - PLM)
+# Models initialized with a pretrained entity linker GENRE (GenIE - GENRE)
 wget https://zenodo.org/record/6139236/files/genie_genre_r.ckpt  # Trained on Rebel
 
 cd ..

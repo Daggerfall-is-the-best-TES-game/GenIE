@@ -1,7 +1,7 @@
 defaults:
   - ckpt_default.yaml
 
-checkpoint_path: "${data_dir}/models/genie_r.ckpt"
+checkpoint_path: "${data_dir}/models/genie_genre_r.ckpt"
 hparams_overrides:
   inference:
     free_generation: false

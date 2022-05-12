@@ -141,7 +141,7 @@ class KiltDataset(Seq2SeqDataset):
     @staticmethod
     def _get_num_lines(input_file_path):
         lines = 0
-        for line in open(input_file_path):
+        for line in open(input_file_path, encoding="utf8"):
             lines += 1
         return lines
 

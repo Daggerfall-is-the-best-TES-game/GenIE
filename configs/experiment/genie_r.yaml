@@ -8,7 +8,7 @@ defaults:
 
 trainer:
   _target_: pytorch_lightning.Trainer
-  gpus: 3
+  gpus: 1
   accelerator: ddp
   replace_sampler_ddp: true
   num_sanity_val_steps: 0
@@ -94,19 +94,19 @@ callbacks:
     _target_: pytorch_lightning.callbacks.LearningRateMonitor
     logging_interval: step
 
-logger:
-  wandb:
-    _target_: pytorch_lightning.loggers.wandb.WandbLogger
-    project: GenIE
-    name: ${run_name}
-    save_dir: .
-    offline: false
-    id: null
-    log_model: false
-    job_type: train
-    group: ""
-    tags: []
-    notes: null
+#logger:
+#  wandb:
+#    _target_: pytorch_lightning.loggers.wandb.WandbLogger
+#    project: GenIE
+#    name: ${run_name}
+#    save_dir: .
+#    offline: false
+#    id: null
+#    log_model: false
+#    job_type: train
+#    group: ""
+#    tags: []
+#    notes: null
 
 run_name: genie_r
 mode: train
